@@ -16,10 +16,10 @@
 7，imxtract 0x44000000 ubi && flash rootfs && reset
 
 8，设置启动参数
-set boot3 "set mtdparts mtdparts=nand0:0x8000000@0x0(fs)"\
-set boot4 "ubi part fs && ubi read 42000000 kernel"\
-set setup1 "partname=1 && setenv bootargs ubi.mtd=rootfs '${args_common}'"\
-set setup2 "partname=2 && setenv bootargs ubi.mtd=rootfs '${args_common}'"\
-saveenv
+   set boot3 "set mtdparts mtdparts=nand0:0x8000000@0x0(fs)"\
+   set boot4 "ubi part fs && ubi read 42000000 kernel"\
+   set setup1 "partname=1 && setenv bootargs ubi.mtd=rootfs '${args_common}'"\
+   set setup2 "partname=2 && setenv bootargs ubi.mtd=rootfs '${args_common}'"\
+   saveenv
 
 9，reset
